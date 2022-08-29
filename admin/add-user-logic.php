@@ -56,7 +56,7 @@ if(isset($_POST['submit'])){
                 // Check if the image extension provided matches the array of allowed extensions...
                 if(in_array($image_extension, $allowed_files)){
                     // manage image file size (< 1MB)...
-                    if($avatar['size'] < 1000000){
+                    if($avatar['size'] < 5000000){
                         // proceed to upload the image
                         move_uploaded_file($avatar_tmp_name,$avatar_destination_path);
                     }else{

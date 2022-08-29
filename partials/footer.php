@@ -11,12 +11,13 @@
           <article>
             <h4>Categories</h4>
             <ul>
-              <li><a href="">Art</a></li>
-              <li><a href="">Wild Life</a></li>
-              <li><a href="">Travel</a></li>
-              <li><a href="">Music</a></li>
-              <li><a href="">Science and Technology</a></li>
-              <li><a href="">Food</a></li>
+              <?php 
+                $category_query = "SELECT * FROM categories";
+                $category_result = mysqli_query($connection, $category_query);
+              ?>
+              <?php while($category = mysqli_fetch_assoc($category_result)) :?>
+              <li><a href="<?= ROOT_URL ?>category-posts.php?id=<?= "{$category['id']}"?>"><?= "{$category['title']}" ?></a></li>
+              <?php endwhile ;?>
             </ul>
           </article>
            <article>

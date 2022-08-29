@@ -19,7 +19,7 @@ if(isset($_SESSION['user-id'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blogit</title>
     <!-- Shortcut Icon -->
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="https: //uxwing.com/pen-icon/" type="image/x-icon">
     <!-- CUSTOM STYLE SHEET -->
     <link rel="stylesheet" href="<?= ROOT_URL ?>css/style.css" />
     <!-- ICONCOUT CDN -->
